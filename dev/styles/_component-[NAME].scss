@@ -1,0 +1,14 @@
+// Hydrogen / Components / Styles
+
+// This reset mixin is used to specify component level style resets if they're needed. These styles only apply to the versioned instance of the component.
+@mixin h2Component[NAME]Reset() {}
+
+// This mixin specifies generic styles that apply to all variations/combinations of this component.
+@mixin h2Component[NAME]Generic($variables) {
+    // Styles
+}
+
+// Load your custom mixins here.
+@mixin h2Component[NAME][MIXIN LABEL]($variables) {
+    // Styles
+}
