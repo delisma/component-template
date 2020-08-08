@@ -54,11 +54,6 @@ The core code for this component can be found in:
 You will need:
 - [Node](https://nodejs.org/en/)
 
-To contribute:
-- `git clone` this repository
-- `npm install`
-- `npm run dev`
-
 ### Important Commands
 - `npm install`
   - installs all development dependencies

@@ -16,5 +16,5 @@ const importBuild = require("./tasks/build");
     // gulp dev
     exports.dev = series(importDev.exportDev);
 
-    // gulp build --v=0.0.1
+    // gulp build
     exports.build = series(importBuild.exportBuild);
