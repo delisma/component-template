@@ -4,11 +4,11 @@
 @mixin h2-component-$COMP-reset() {}
 
 // This mixin specifies generic styles that apply to all variations/combinations of this component.
-@mixin h2-component-$COMP-generic($variables) {
+@mixin h2-component-$COMP-generic() {
     // Styles
 }
 
 // Load your custom mixins here.
-@mixin h2-component-$COMP-custom($variables) {
+@mixin h2-component-$COMP-custom() {
     // Styles
 }
