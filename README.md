@@ -9,14 +9,14 @@
 
 ## Basics
 
-This repository acts as a template for creating new components for Hydrogren. Components are referred to throughout the repo as "component-[NAME]".
+This repository acts as a template for creating new components for Hydrogren. Components are referred to throughout the repo as "component-my-name".
 
 Important files to pay attention to:
-- `dev/markup/h2-component-[NAME].html` (the file where your reference markup for the component will exist)
-- `dev/scripts/h2-component-[NAME].js` (the file where your component scripts will go; you can use Cash functions here)
-- `dev/styles/_component-[NAME].scss` (where your component's styles exist, all of which should be in mixins that are called by the following two files)
-  - `dev/styles/h2-system-component-[NAME].scss` (the file that generates the styles needed by Hydrogen as a system)
-  - `dev/styles/h2-version-component-[NAME].scss` (thie file that generates the unique standalone component code for this version of your component)
+- `dev/markup/h2-component-my-name.html` (the file where your reference markup for the component will exist)
+- `dev/scripts/h2-component-my-name.js` (the file where your component scripts will go; you can use Cash functions here)
+- `dev/styles/_component-my-name.scss` (where your component's styles exist, all of which should be in mixins that are called by the following two files)
+  - `dev/styles/h2-system-component-my-name.scss` (the file that generates the styles needed by Hydrogen as a system)
+  - `dev/styles/h2-version-component-my-name.scss` (thie file that generates the unique standalone component code for this version of your component)
 - `tests/index.html` (the file that is loaded when `npm run dev` is run; put markup in here to test your component)
 - `npm.js` (the default JS file loaded for the package)
 - `package.json` (the details of the npm package for your component)
