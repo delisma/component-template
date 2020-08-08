@@ -7,6 +7,13 @@
 - run `npm run init -- --c=my-name`
 - code away
 
+## Key Things to Remember
+- Your component should work as a standalone product as well as an extension of Hydrogen.
+- Your component should be as accessible as possible.
+- Your component should limit styling to structural CSS (e.g. don't make the background blue just because you want to, offer a variation of your component that lets the user choose a colour via an argument in the attribute; data-h2-my-component="blue")
+- Your component should offer, at a minimum, reference HTML markup. Other markup is welcome if you'd like your component to be used in other frameworks, but *the component should not rely on those frameworks to work*.
+
+
 ## Basics
 
 This repository acts as a template for creating new components for Hydrogren. Components are referred to throughout the repo as "component-my-name".
