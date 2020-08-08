@@ -1,2 +1,2 @@
-// Hydrogen / Components / Module
-console.log("This is the Hydrogen [NAME] component.");
+// Hydrogen / Component / Module
+console.log("This is the Hydrogen $COMP component.");

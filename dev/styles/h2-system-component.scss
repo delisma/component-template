@@ -1,4 +1,4 @@
-// Hydrogen / Components / System
+// Hydrogen / Component / System
 // This file is processed and then imported into @hydrogen-design-system/system
 
 // File paths must respect how the system's architecture works.
@@ -25,11 +25,11 @@
 @use "../../core/defaults" as var;
 
 // Load the component so that its mixins can be accessed.
-@use "component-[NAME]" as *;
+@use "component-$COMP" as *;
 
 // Load the generic mixin with its respective theme variables.
-[data-h2-[NAME]] {
-    @include h2Component[NAME]Generic();
+[data-h2-$COMP] {
+    @include h2-component-$COMP-generic();
 }
 
 // Load custom mixins here. Please refer to existing components for examples, as well as how to pass variables, maps, and functions. 

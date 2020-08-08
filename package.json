@@ -1,11 +1,13 @@
 {
-  "name": "component-[NAME]",
+  "name": "@hydrogen-design-system/component-comp",
   "version": "0.0.1",
   "description": "A new Hydrogen component.",
   "main": "npm.js",
   "scripts": {
+    "init": "npx gulp init",
     "dev": "npx gulp dev",
-    "build": "npx gulp build"
+    "build": "npx gulp build",
+    "prepublishOnly": "npx gulp build"
   },
   "repository": {
     "type": "git",
@@ -35,7 +37,8 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.1",
-    "sass": "^1.26.8"
+    "sass": "^1.26.8",
+    "yargs": "^15.4.0"
   },
   "browserslist": [
     "last 1 version and not dead"

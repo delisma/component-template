@@ -1,20 +1,28 @@
 # Custom Component Template
 
-This repository acts as a template for creating new components for Hydrogren. Components are referred to throughout the repo as "component-[NAME]". Please replace "[NAME]" with the official name of the component you're creating in all files and file names.
+## Getting Started
 
-Important files to look at when naming your component:
+- run `npm install`
+- choose a name for your component (e.g. my-name)
+- run `npm run init -- --c=my-name`
+- code away
+
+## Basics
+
+This repository acts as a template for creating new components for Hydrogren. Components are referred to throughout the repo as "component-[NAME]".
+
+Important files to pay attention to:
 - `dev/markup/h2-component-[NAME].html` (the file where your reference markup for the component will exist)
 - `dev/scripts/h2-component-[NAME].js` (the file where your component scripts will go; you can use Cash functions here)
 - `dev/styles/_component-[NAME].scss` (where your component's styles exist, all of which should be in mixins that are called by the following two files)
   - `dev/styles/h2-system-component-[NAME].scss` (the file that generates the styles needed by Hydrogen as a system)
   - `dev/styles/h2-version-component-[NAME].scss` (thie file that generates the unique standalone component code for this version of your component)
 - `tests/index.html` (the file that is loaded when `npm run dev` is run; put markup in here to test your component)
-- `gulpfile.js` (lines 21 and 24 specify the name of your component and the current version respectively)
 - `npm.js` (the default JS file loaded for the package)
 - `package.json` (the details of the npm package for your component)
 - `README.md` (this file, please edit it to ensure other people can work with your component locally)
 
-# Hydrogen: [NAME] component
+# Hydrogen: $COMP
 
 Hydrogen's components are built using [Gulp](https://gulpjs.com/), [Sass](https://sass-lang.com), [Autoprefixer](https://github.com/postcss/autoprefixer), and [CSSnano](https://cssnano.co/).
 
@@ -34,7 +42,7 @@ This component currently supports the following markup and/or frameworks:
 The core code for this component can be found in:
 - dev/markup/
 - dev/scripts/
-- dev/styles/_component-[NAME].scss
+- dev/styles/_component-$COMP.scss
 
 You will need:
 - [Node](https://nodejs.org/en/)
@@ -45,8 +53,13 @@ To contribute:
 - `npm run dev`
 
 ### Important Commands
+- `npm install`
+  - installs all development dependencies
 - `npm run dev`
   - builds the versioned instance of the component and opens the test file in your browser with browser-sync running so that you can moderate your changes
 - `npm run build`
   - runs the build command to process all files for production
   - this will automatically build the system and instanced versions of the component
+- `npm publish`
+  - builds the component
+  - publishes it to the public package repository
